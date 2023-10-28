@@ -23,7 +23,6 @@ public class Main {
         size = sc.next();
         System.out.println("Enter Item Quantity: ");
         quantity = sc.nextInt();
-
         Clothing cloth = new Clothing(name, 56.6, quantity, size);
         cloth.addToCart(cloth);
 

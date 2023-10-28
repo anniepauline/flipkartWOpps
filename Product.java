@@ -14,21 +14,20 @@ class Product {
     }
 
     public void addToCart(Electronics obj) {
-        System.out.println(obj.getClass().getName() + " was added to cart");
-        quantity += obj.quantity;
-        double p = obj.price * obj.quantity;
-        price += p;
-        totalPrice += obj.price;
+        System.out.println(obj.getClass().getName() + ": " + obj.name + " was added to cart");
+        quantity = obj.quantity;
+        /// double p = obj.price * quantity;
+        price = obj.price * obj.quantity;
+        totalPrice += price;
         totalQuantity += obj.quantity;
         System.out.println("Price " + price);
     }
 
     public void addToCart(Clothing obj) {
-        System.out.println(obj.getClass().getName() + " was added to cart");
-        quantity += obj.quantity;
-        double p = obj.price * obj.quantity;
-        price += p;
-        totalPrice += obj.price;
+        System.out.println(obj.getClass().getName() + ": " + obj.name + " was added to cart");
+        quantity = obj.quantity;
+        price = obj.price * obj.quantity;
+        totalPrice += price;
         totalQuantity += obj.quantity;
         System.out.println("Price " + price);
 
