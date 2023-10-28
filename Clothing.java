@@ -1,5 +1,5 @@
-package flipkartWOpps;
-public class Clothing extends Product {
+public class Clothing extends Product{
+
     String size;
 
     Clothing(String n, double p, int q, String s) {

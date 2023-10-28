@@ -1,6 +1,3 @@
-package flipkartWOpps;
-import javax.print.attribute.standard.Media;
-
 class Product {
     String name;
     double price;
@@ -9,22 +6,11 @@ class Product {
     static double totalPrice;
     static double totalQuantity;
 
-    private Electronics electronic;
-    private Clothing clothes;
-
     Product(String n, double p, int q) {
         this.name = n;
         this.price = p;
         this.quantity = q;
 
-    }
-
-    public Product(Electronics e) {
-        electronic = e;
-    }
-
-    public Product(Clothing c) {
-        clothes = c;
     }
 
     public void addToCart(Electronics obj) {

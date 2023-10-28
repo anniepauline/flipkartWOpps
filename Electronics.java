@@ -1,4 +1,3 @@
-package flipkartWOpps;
 public class Electronics extends Product {
     double durability;
 
